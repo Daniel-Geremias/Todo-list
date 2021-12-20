@@ -3,32 +3,51 @@
 <head>
     <meta charset='utf-8'>
     <title>Todo-list</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="clear">
-                <i class="fa fa-refresh"></i>
+    <h1>My To-Do List</h1>
+
+    <div class="all-projects">
+        <h2 class="project-list-title">My Projects</h2>
+        <ul class="project-list">
+            <li class="active-list">YouTube</li>
+            <li>Work</li>
+            <li>Grocery</li>
+        </ul>
+
+        <form action="">
+            <input 
+                type="text"
+                class="new project"
+                placeholder="new project name"
+                aria-label="new project name"
+            />
+            <button class="btn project" aria-label="create new project">+</button>
+        </form>
+    </div>
+
+    <div class="todo-list">
+        <div class="todo-header">
+            <h2 class="ptoject-title">YouTube</h2>
+            <p class="task-count">3 tasks remaining</p>
+        </div>
+        <div class="todo-body">
+            <div class="tasks">
+                <div class="task">
+                    <input
+                        type="checkbox"
+                        id="task-1"
+                    />
+                    <label for="task-1">
+                        record todo list video
+                    </label>
+                </div>
             </div>
-            <div id="date"></div>
-        </div>
-        <div class="content">
-            <ul id="list">
-                <li class="item">
-                    <!-- <i class="fa fa-circle-thin co" job="complete" id="0"></i>
-                    <p class="text">Drink coffee</p>
-                    <i class="fa fa-trash-o" job="delete" id="0"></i> -->
-                </li>
-            </ul>
-        </div>
-        <div class="add-to-do">
-            <i class="fa fa-plus-circle"></i>
-            <input type="text" id="input" placeholder="Add a to-do">
+            <div class="new-task-creator"></div>
+            <div class="delete-task"></div>
         </div>
     </div>
-    
 </body>
 </html>
