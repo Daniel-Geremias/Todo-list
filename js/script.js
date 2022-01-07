@@ -93,7 +93,7 @@ function render() {
     if(selectedListId == null) {
         listDisplayContainer.style.display = 'none'
     } else {
-        listDisplayContainer.style,display = ''
+        listDisplayContainer.style.display = ''
         listTitleElement.innerText = selectedList.name
         renderTaskCount(selectedList)
         clearElement(taskContainer)
